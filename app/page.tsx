@@ -3,7 +3,6 @@
 // all components are server by default
 // but server comp cant aceess browser apis or listen to browser events
 // usually we default to server components in next but use client only when necessary
-
 import Link from "next/link";
 import AddToCart from "./components/AddToCart";
 
@@ -18,6 +17,7 @@ export default function Home() {
       <div>
         <AddToCart/>
       </div>
+      <div>{new Date().toLocaleTimeString()}</div>
     </main>
   );
 }
